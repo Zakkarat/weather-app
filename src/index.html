@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/weather-icons.css">
+    <link rel="stylesheet" href="stylesheets/weather-icons.min.css">
+    <link rel="stylesheet" href="stylesheets/weather-icons-wind.min.css">
+    <title>Weather app</title>
+</head>
+<body>
+    <div class="favorite-list-active">
+        <h2 class="head-side">Favorites</h2>
+        <hr>
+        <div class="city-block"><h3 class="city-block-text">Kiev, UA</h3></div>
+        <div class="city-block"><h3 class="city-block-text">Kiev, UA</h3></div>
+        <div class="city-block"><h3 class="city-block-text">Kiev, UA</h3></div>
+        <div class="city-block"><h3 class="city-block-text">Kiev, UA</h3></div>
+        <div class="city-block"><h3 class="city-block-text">Kiev, UA</h3></div>
+    </div>
+    <div class="main">
+        <div class="search-block">
+            <div class="fav-button"><h2>Fav</h2></div>
+            <input type="text" class="search">
+            <div class="fav-button"><h2>Hist</h2></div>
+        </div>
+        <div class="display-day">
+            <div class="star">☆</div>
+            <div class="upper-day">
+            <div class="city"><h1>Kiev, UA</h1>&nbsp;&nbsp;<h1><i class="wi wi-day-sunny"></i></h1></div>
+            <div class="temp"><h1 class="degree">19&#176;</h1><h1 class="degree-state">C</h1> <div class="change-deg">F</div></div></div>
+            <div class="bottom-day">
+                <div class="humidity"><h3>Humidity:&nbsp;&nbsp;</h3><h3>100%</h3></div>
+                <div class="wind"><h3>2 m/s</h3>&nbsp;&nbsp;<h3><i class="wi wi-wind towards-sse"></i></h3></div>
+                <div class="feel"><h3>Feels like: 19&#176;</h3></div>
+            </div>
+            <!-- <div class="temp-buttom"></div> --> 
+    </div>
+        <div class="display-week">
+            <div class="card">
+                <h1 class="week-day">Mon</h1>
+                <hr>
+                <h1 class="week-status"><i class="wi wi-day-sunny"></i></h1>
+                <h1 class="week-temp">19&#176;</h1>
+            </div>
+            <div class="card">
+                <h1 class="week-day">Tue</h1>
+                <hr>
+                <h1 class="week-status"><i class="wi wi-day-sunny"></i></h1>
+                <h1 class="week-temp">19&#176;</h1>
+            </div>
+            <div class="card">
+                    <h1 class="week-day">Wed</h1>
+                    <hr>
+                    <h1 class="week-status"><i class="wi wi-day-sunny"></i></h1>
+                    <h1 class="week-temp">19&#176;</h1>
+                </div>
+                <div class="card">
+                        <h1 class="week-day">Thr</h1>
+                        <hr>
+                        <h1 class="week-status"><i class="wi wi-day-sunny"></i></h1>
+                        <h1 class="week-temp">19&#176;</h1>
+                    </div>
+                    <div class="card">
+                            <h1 class="week-day">Fri</h1>
+                            <hr>
+                            <h1 class="week-status"><i class="wi wi-day-sunny"></i></h1>
+                            <h1 class="week-temp">19&#176;</h1>
+                        </div>
+        </div>
+    </div>
+    <div class="history-list-active">
+            <h2 class="head-side">History</h2>
+            <hr>
+            <div class="city-block"><h3 class="city-block-text">Kiev, UA</h3></div>
+            <div class="city-block"><h3 class="city-block-text">Kiev, UA</h3></div>
+            <div class="city-block"><h3 class="city-block-text">Kiev, UA</h3></div>
+            <div class="city-block"><h3 class="city-block-text">Kiev, UA</h3></div>
+            <div class="city-block"><h3 class="city-block-text">Kiev, UA</h3></div>
+        </div>
+        <main id="app"></main>
+        <script src="./js/index.js"></script>
+</body>
+</html>
