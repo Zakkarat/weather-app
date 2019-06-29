@@ -60,7 +60,7 @@ export default class currentWeather extends Component {
     const city =
       e.target.nextElementSibling.firstElementChild.firstElementChild.innerText;
     const localStor = JSON.parse(localStorage.getItem("favorite"));
-    if(localStor.favorite.length > 4) {
+    if(localStor && localStor.favorite.length > 4) {
       return
     }
     if (localStor && localStor.favorite.some(item => item === city)) {
