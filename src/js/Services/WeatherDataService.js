@@ -14,7 +14,7 @@ class WeatherDataService {
   getWeather(userInput) {
     const promises = this.appIds.map(controlPoint => {
       return fetch(
-        `http://api.openweathermap.org/data/2.5/${
+        `https://api.openweathermap.org/data/2.5/${
           controlPoint.type
         }?q=${userInput}&units=${this.units}&APPID=${controlPoint.APPID}`
       ).then(response => {
