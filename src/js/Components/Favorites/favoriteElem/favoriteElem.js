@@ -17,6 +17,7 @@ export default class FavoriteElem extends Component {
     });
     localStorage.setItem("favorite", JSON.stringify(localStor));
     AppState.update("FAVORITEDEL", null);
+    AppState.update("FAVORITEDELMENU", {star: false});
   }
 
   clickNotify(e) {

@@ -5,6 +5,7 @@ export default class currentWeather extends Component {
   constructor(host, props) {
     super(host, props);
     AppState.watch("WEATHER", this.updateMyself);
+    AppState.watch("FAVORITEDELMENU", this.updateMyself);
     this.getLocationData();
   }
 
@@ -46,8 +47,10 @@ export default class currentWeather extends Component {
     AppState.update("UNITS", values[3]);
   }
   updateMyself(subState) {
+    if(subState.name) {
     const city = `${subState.name}, ${subState.sys.country}`;
     AppState.update("HISTORY", city);
+    }
     const localStor = JSON.parse(localStorage.getItem("favorite"));
     if (localStor && localStor.favorite.some(item => item === city)) {
       subState.star = true;
