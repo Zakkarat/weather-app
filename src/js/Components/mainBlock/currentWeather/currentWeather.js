@@ -52,7 +52,7 @@ export default class currentWeather extends Component {
     AppState.update("HISTORY", city);
     }
     const localStor = JSON.parse(localStorage.getItem("favorite"));
-    if (localStor && localStor.favorite.some(item => item === city)) {
+    if (city && localStor && localStor.favorite.some(item => item === city)) {
       subState.star = true;
     } else {
       subState.star = false;
